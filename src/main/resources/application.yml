@@ -15,6 +15,6 @@ spring:
 # JWT 설정 추가
 jwt:
   secret:
-    key: nN7u9EBMBF5eGrJ9tMkqhiB7vKn9gMve5wjkk6YRbYZDt3azeUNxQmQCP6fXHc3l   # 원하는 시크릿 키 입력(MySuperSecretKey를 Encode)
+    key: nN7u9EBMBF5eGrJ9tMkqhiB7vKn9gMve5wjkk6YRbYZDt3azeUNxQmQCP6fXHc3l   # 시크릿 키
   access-token:
     expiration: 1800000 # 30분
