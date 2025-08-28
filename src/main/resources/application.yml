@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/${DB_NAME}
+    username: ${USER_NAME}
+    password: ${PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        show_sql: true
+        format_sql: true
+
+# JWT 설정 추가
+jwt:
+  secret:
+    key: nN7u9EBMBF5eGrJ9tMkqhiB7vKn9gMve5wjkk6YRbYZDt3azeUNxQmQCP6fXHc3l   # 원하는 시크릿 키 입력(MySuperSecretKey를 Encode)
+  access-token:
+    expiration: 1800000 # 30분
